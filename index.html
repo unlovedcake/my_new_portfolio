@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon de la Victoria • Flutter & Web Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-loader">
+      <div class="loader-circle"></div>
+      <span class="loader-text">Loading portfolio…</span>
+    </div>
+
+    <div class="page-wrapper">
+      <header class="navbar">
+        <div class="nav-inner container">
+          <a href="#hero" class="logo" aria-label="Mon de la Victoria home">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span class="logo-text">Mon de la Victoria</span>
+          </a>
+          <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Let’s work
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section id="hero" class="section hero-section">
+          <div class="container hero-grid">
+            <div class="hero-content reveal fade-up delay-1">
+              <p class="eyebrow">Flutter Developer • Web Developer</p>
+              <h1>
+                Crafting fast, elegant
+                <span class="gradient-text">apps & websites</span>.
+              </h1>
+              <p class="hero-subtitle">
+                I design and build modern, high-performance mobile apps with
+                Flutter and responsive web experiences that feel smooth,
+                polished, and delightful to use.
+              </p>
+              <div class="hero-actions">
+                <button
+                  class="btn primary"
+                  onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"
+                >
+                  View Projects
+                </button>
+                <button
+                  class="btn ghost"
+                  onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+                >
+                  Contact Me
+                </button>
+              </div>
+              <div class="hero-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Specialized in</span>
+                  <span class="meta-value">Flutter, Firebase, Laravel, Node.js</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Focus</span>
+                  <span class="meta-value">Performance • UI/UX • Animation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal fade-up delay-2">
+              <div class="glass-card hero-card">
+                <div class="hero-tag">Available for Freelance</div>
+                <div class="hero-avatar">
+                  <div class="avatar-circle">
+                    <img
+                      src="images/profile_image.png"
+                      alt="Mon de la Victoria profile photo"
+                      class="avatar-img"
+                    />
+                  </div>
+                </div>
+                <div class="hero-title">Mon de la Victoria</div>
+                <div class="hero-pill-row">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Dart</span>
+                  <span class="pill">PHP</span>
+                  <span class="pill">Laravel</span>
+                </div>
+                <div class="hero-stats">
+                  <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Projects Shipped</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card--left">
+                <span class="dot dot--green"></span>
+                <span class="floating-label">Smooth Animations</span>
+              </div>
+              <div class="floating-card floating-card--right">
+                <span class="dot dot--purple"></span>
+                <span class="floating-label">Pixel-perfect UI</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <div class="container about-grid">
+            <div class="section-header reveal fade-up">
+              <p class="eyebrow">About</p>
+              <h2>Building experiences that feel native everywhere.</h2>
+            </div>
+            <div class="about-content reveal fade-up delay-1">
+              <p>
+                I’m a Flutter and Web Developer passionate about creating
+                fluid, responsive interfaces that feel as good as they look.
+                I focus on clean architecture, maintainable code, and small
+                design details that make products feel premium.
+              </p>
+              <p>
+                From concept to deployment, I collaborate closely with
+                designers and stakeholders, translating ideas into polished,
+                production-ready apps and websites.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight">
+                  <span class="highlight-dot"></span>
+                  <span>Cross‑platform apps with shared codebase.</span>
+                </div>
+                <div class="highlight">
+                  <span class="highlight-dot"></span>
+                  <span>Animations that guide users, not distract.</span>
+                </div>
+                <div class="highlight">
+                  <span class="highlight-dot"></span>
+                  <span>Performance‑first mindset on every screen.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+          <div class="container">
+            <div class="section-header reveal fade-up">
+              <p class="eyebrow">Skills</p>
+              <h2>What I work with.</h2>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-card glass-card reveal fade-up delay-1">
+                <h3>Flutter Development</h3>
+                <p>
+                  Beautiful, performant mobile apps for Android and iOS using
+                  Flutter and Dart, with attention to animations and UX.
+                </p>
+                <div class="skill-tags">
+                  <span class="pill small">Flutter</span>
+                  <span class="pill small">Dart</span>
+                  <span class="pill small">GetX / Bloc / Provider</span>
+                  <span class="pill small">CI / CD</span>
+                  <span class="pill small">Firebase Auth</span>
+                  <span class="pill small">Firebase Firestore</span>
+                  <span class="pill small">Google Maps API</span>
+                  <span class="pill small">Git & GitHub</span>
+                </div>
+              </div>
+
+              <div class="skill-card glass-card reveal fade-up delay-2">
+                <h3>Web Development</h3>
+                <p>
+                  Responsive web apps and landing pages that load fast and look
+                  great on every device.
+                </p>
+                <div class="skill-tags">
+                  <span class="pill small">HTML</span>
+                  <span class="pill small">CSS / SASS</span>
+                  <span class="pill small">JavaScript</span>
+                  <span class="pill small">PHP</span>
+                  <span class="pill small">Laravel</span>
+                  <span class="pill small">Node.js</span>
+                  <span class="pill small">MySQL</span>
+                  <span class="pill small">REST APIs</span>
+                </div>
+              </div>
+
+              <div class="skill-card glass-card reveal fade-up delay-3">
+                <h3>UI / UX & Motion</h3>
+                <p>
+                  Micro‑interactions and transitions that make interfaces feel
+                  intuitive, consistent, and premium.
+                </p>
+                <div class="skill-tags">
+                  <span class="pill small">Prototyping</span>
+                  <span class="pill small">Animations</span>
+                  <span class="pill small">Design Systems</span>
+                  <span class="pill small">Accessibility</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="section-header reveal fade-up">
+              <p class="eyebrow">Projects</p>
+              <h2>Selected work.</h2>
+            </div>
+
+            <div class="projects-grid">
+              <article class="project-card reveal fade-up delay-1">
+                <div class="project-media">
+                  <img
+                    src="images/project_afex.png"
+                    alt="AFEX Exhibitor app preview"
+                    class="project-img--tall"
+                  />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge">Flutter App</div>
+                  <h3>AFEX Exhibitor</h3>
+                  <p>
+                    Smart business matching and exhibitor companion app for Asia
+                    Food Expo 2024 in Manila, built for fast onboarding, real‑time
+                    visitor insights, and in‑app messaging.
+                  </p>
+                  <div class="project-tags">
+                    <span class="pill small">Flutter</span>
+                    <span class="pill small">Firebase</span>
+                    <span class="pill small">REST APIs</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=ph.asiafoodexpo.afex_exhibitor_mobile"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn ghost"
+                    >
+                      View on Google Play
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal fade-up delay-2">
+                <div class="project-media">
+                  <img
+                    src="images/project_green_arkz.png"
+                    alt="Green Arkz shopping app preview"
+                    class="project-img--tall"
+                  />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge">Flutter App</div>
+                  <h3>Green Arkz</h3>
+                  <p>
+                    Simple, secure shopping app focused on fast browsing, smooth
+                    checkout, and a clean product catalog experience.
+                  </p>
+                  <div class="project-tags">
+                    <span class="pill small">Flutter</span>
+                    <span class="pill small">Getx</span>
+                    <span class="pill small">Firebase Firestore</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.green_arkz"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn ghost"
+                    >
+                      View on Google Play
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal fade-up delay-3">
+                <div class="project-media">
+                  <img
+                    src="images/project_payday_today.png"
+                    alt="Payday Today wage access app preview"
+                    class="project-img--tall"
+                  />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge">Flutter App</div>
+                  <h3>Payday Today</h3>
+                  <p>
+                    Earned wage access app for employees in the Philippines,
+                    enabling secure early salary withdrawals and transfers to
+                    banks and e‑wallets.
+                  </p>
+                  <div class="project-tags">
+                    <span class="pill small">Flutter</span>
+                    <span class="pill small">Fintech</span>
+                    <span class="pill small">Secure APIs</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.goodkredit.myapplication.paydaytoday"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn ghost"
+                    >
+                      View on Google Play
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal fade-up delay-3">
+                <div class="project-media">
+                  <img
+                    src="images/project_shop_swift.png"
+                    alt="Shop Swift food and shopping app preview"
+                  />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge">Flutter App</div>
+                  <h3>Shop Swift</h3>
+                  <p>
+                    A lightning‑fast shopping experience focused on smooth
+                    navigation, optimized checkout, and a clean modern UI.
+                  </p>
+                  <div class="project-tags">
+                    <span class="pill small">Flutter</span>
+                    <span class="pill small">GetX</span>
+                    <span class="pill small">Google Maps API</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.food_courier"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn ghost"
+                    >
+                      View on Google Play
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+          <div class="container contact-grid">
+            <div class="section-header reveal fade-up">
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s build something together.</h2>
+            </div>
+            <div class="contact-content reveal fade-up delay-1">
+              <p>
+                Whether you need a Flutter app, a modern website, or want to
+                improve an existing product, I’d love to hear about it.
+              </p>
+              <div class="contact-options">
+                <div class="contact-item">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:mdelavictoria.binary@gmail.com" class="contact-value">
+                    mdelavictoria.binary@gmail.com
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+639165622770" class="contact-value">
+                    0916 562 2770
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Talisay City, Cebu, Philippines</span>
+                </div>
+              </div>
+              <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="project">Message</label>
+                  <textarea
+                    id="project"
+                    rows="4"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn primary full-width">
+                  Send Message
+                </button>
+                <p class="form-message" id="form-message"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <span class="footer-text">© <span id="year"></span> Mon de la Victoria. All rights reserved.</span>
+          <div class="footer-links">
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="#hero">Back to top</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
